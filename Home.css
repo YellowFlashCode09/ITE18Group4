@@ -1,0 +1,233 @@
+    /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Home Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Navbar */
+.navbar1 {
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.navbt button {
+    background-color: transparent;
+    color: #9C9C9C;
+    border: none;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.home {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.socmed1 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.socmed1 img:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.left {
+    max-width: 50%;
+}
+
+.head {
+    font-size: 100px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+}
+
+.sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 25px;
+    color: #9C9C9C;
+    margin-top: 15px;
+}
+
+.btcontact {
+    border: solid rgb(98, 186, 27);
+    background-color: rgb(63, 142, 0);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 25px;
+    padding: 35px 40px;
+    box-shadow: rgb(63, 142, 0) 0px 0px 50px 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.right img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Content Sections */
+.content1, .content2, .Profiles {
+    padding: 50px 10%;
+    padding-bottom: 10px;
+}
+
+.subh {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.pmicon, .c2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pm {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: transform .2s;
+}
+
+.pm:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
+.c {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    transition: transform .2s;
+}
+
+.c:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
+/* Footer */
+footer {
+    background-color: #1B1B1B;
+    padding: 20px 0;
+    text-align: center;
+    color: #9C9C9C;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .navbar1 {
+        padding: 20px 5%;
+    }
+    .hero {
+        padding: 50px 5%;
+    }
+    .head {
+        font-size: 50px;
+    }
+    .btcontact {
+        padding: 10px 20px;
+    }
+    .pmicon, .c2 {
+        justify-content: space-around;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .navbar1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbt button {
+        margin-bottom: 10px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+    .left, .right {
+        max-width: 100%;
+    }
+    .head {
+        font-size: 48px;
+    }
+    .sub {
+        font-size: 16px;
+    }
+    .btcontact {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .socmed1 {
+        margin-top: 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .navbar1 {
+        padding: 15px;
+    }
+    .head {
+        font-size: 36px;
+    }
+    .sub {
+        font-size: 14px;
+    }
+    .btcontact {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .pmicon, .c2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pm, .c {
+        max-width: 80px;
+    }
+}
